@@ -248,7 +248,7 @@ UI/UX inspired by modern AI applications with:
 
 For questions or support:
 - Create an [Issue](https://github.com/yourusername/civisight/issues)
-- Email: your.email@example.com
+- Email: manojvenkat2k05@gmail.com
 
 ---
 
