@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-gradient-dark text-white font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/80 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-glow hover:shadow-glow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20;
+  }
+  
+  .card {
+    @apply bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-xl;
+  }
+  
+  .card-glow {
+    @apply bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-primary/30 shadow-glow hover:shadow-glow-lg transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary/50 text-white placeholder-white/60 backdrop-blur-sm;
+  }
+  
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+  
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent;
+  }
+}
